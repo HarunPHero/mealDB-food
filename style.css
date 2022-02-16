@@ -1,0 +1,21 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(21, 181, 255),
+    rgb(71, 255, 200)
+  );
+  background-size: cover;
+}
+
+.banner-text {
+  font-size: 35px;
+  font-weight: 900;
+  color: rgb(4, 92, 133);
+}
+.banner-text:hover {
+  color: rgb(71, 255, 200);
+}
+footer > p {
+  color: gray;
+  font-weight: 600;
+}
