@@ -31,14 +31,16 @@ const displayFood = data => {
   }
   food.innerHTML = "";
   if (text.length > 0) {
+
     for (const meal of data.meals) {
+      const { strMealThumb, strMeal, strYoutube } = meal
       const div = document.createElement('div');
       div.innerHTML = `
           <div class="card">
-          <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
+          <img src="${strMealThumb}" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">${meal.strMeal}</h5>
-            <a href="${meal.strYoutube}" class="btn btn-primary">Show video recipe on youtube</a>
+            <h5 class="card-title">${strMeal}</h5>
+            <a href="${strYoutube}" class="btn btn-primary">Show video recipe on youtube</a>
           </div>
         </div>
           `;

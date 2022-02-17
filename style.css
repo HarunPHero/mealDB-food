@@ -19,3 +19,7 @@ footer > p {
   color: gray;
   font-weight: 600;
 }
+#error-text{
+  font-weight: 600;
+  font-size: 30px;
+}
